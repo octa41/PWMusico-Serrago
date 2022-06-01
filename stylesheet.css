@@ -7,7 +7,6 @@ header{
     width: 100%;
     background-color: black;
     color: white;
-    text-decoration: none;
 }
 hr{
     border: 0; 
@@ -30,3 +29,26 @@ a{
     text-align: left;
 }
 
+.section-background{
+    height: 800px;
+    width: 100%;
+    background-image: url(jpg/Homephoto.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.reproduccion{
+    padding-bottom: 350px;
+}
+
+#artmain{
+    text-align: center;
+    padding-top: 50px;
+    background-color: rgb(220, 170, 105);
+    height: 500px;
+}
+
+iframe{
+    text-align: center;
+}
