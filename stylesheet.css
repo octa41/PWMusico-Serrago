@@ -39,7 +39,27 @@ a{
 }
 
 .reproduccion{
-    padding-bottom: 350px;
+    float: left;
+    background-color: rgba(128, 128, 128, 0.718);
+    padding: 20px;
+    margin-top: 600px;
+    margin-left: 70%;
+    border-radius: 5px;
+}
+
+.reproduccion h2{
+    text-align: center;
+    color: white;
+}
+.reproduccion h3{
+    color: white;
+}
+
+.reproduccion a{
+    height: 50px;
+    margin: 10px;
+    background-color: rgba(245, 245, 220, 0.838);
+    border-radius: 2px;
 }
 
 #artmain{
@@ -51,4 +71,31 @@ a{
 
 iframe{
     text-align: center;
+}
+
+.about{
+    text-align: center;
+    padding-top: 25px;
+}
+
+.biografia{
+    background-color: rgba(128, 128, 128, 0.536);
+}
+
+.biotexto{
+    text-align: center;
+}
+
+
+.contenedorinfo{
+    text-align: left;
+    padding: 40px;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: black;
+    color: white;
 }
