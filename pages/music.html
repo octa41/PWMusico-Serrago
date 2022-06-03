@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="../stylesheet.css">ss
+    <link rel="stylesheet" href="../stylesheet.css">
     <title>OCTAVIO SERRAGO - MUSIC</title>
 </head>
-<body>
+<body class="musicbody">
     <header class="container-fluid">
         <div class="row">
-            <a class ="col-lg-12" href="index.html"><h1>OCTAVIO SERRAGO</h1></a>
+            <a class ="col-lg-12" href="index.html">
+                <h1 id="name">OCTAVIO SERRAGO</h1>
+            </a>
             <hr class="col-lg-12">
             <article class="col-12 col-md-12 col-lg-3" id="redes">
                 <a class="col-lg-1" href="https://www.instagram.com/octavioserrago/" target="_blank">
@@ -31,18 +33,58 @@
                     <i class="fa-brands fa-facebook"></i>
                 </a>
             </article>
-            <div class="contenedor col-12 col-sm-12 col-lg-2"><a href="../index.html">HOME</a></div>
-            <div class="contenedor col-12 col-sm-12 col-lg-2"><a href="music.html">MUSIC</a></div>
-            <div class="contenedor col-12 col-sm-12 col-lg-2"><a href="contact.html">CONTACT</a></div>
-            <div class="contenedor col-12 col-sm-12 col-lg-2"><a href="tourdates.html">TOUR DATES</a></div>
+            <div class="contenedor3 col-12 col-sm-12 col-lg-2" id="elnav"><a href="../index.html">HOME</a></div>
+            <div class="contenedor3 col-12 col-sm-12 col-lg-2" id="elnav"><a href="music.html">MUSIC</a></div>
+            <div class="contenedor3 col-12 col-sm-12 col-lg-2" id="elnav"><a href="contact.html">CONTACT</a></div>
+            <div class="contenedor3 col-12 col-sm-12 col-lg-2" id="elnav"><a href="tourdates.html">TOUR DATES</a></div>
         </div>
     </header>
-
     <main class="container-fluid">
         <div class="row">
-
+            <h2 class="col-12" id="music">MUSIC</h2>
+            <img src="../jpg/lost2.jpg" alt=""  class=" col-12 col-sm-7 col-lg-3" height="300px" id="imgcover">
+            <div class="contenedormusic col-lg-3">
+                <h4 id="">LOST</h4>
+                <h6 id="epsubtitle">New EP 2022</h6>
+                <button type="button" class="btn btn-light"><a>BUY</a></button>
+            </div>
+            <hr class="col-12" id="line">
+            <h4 class="col-12" id="tfdos">The First Day Of Spring</h4>
+            <h6 class="col-12" id="tfdossingle">Single-2021</h6>
+            <img src="../jpg/images.jpg" alt="" class="foto col-12 col-sm-6 col-md-8 col-lg-3" height="250px" id="fototfdos">
+            <section class="section1 col-12 col-lg-12">
+                <button type="button" class="btn btn-light">
+                    <a>BUY</a>
+                </button>
+            </section>
         </div>        
     </main>
+
+    <section>
+        <div class="contenedorinfo">
+            <h4>Suscribe to my newsletter to recieve tour dates, photos, news and more!</h4>
+            <div class="newsletter">
+                <form action="/action_page.php">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+                <div class="form-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <footer class="col-12">
+                <h7 class="col-12">COPYRIGHTS OCTAVIO SERRAGO. ALL RIGHTS RESERVED</h7>
+            </footer>
+        </div>
+    </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
