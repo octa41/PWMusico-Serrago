@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+hr{
+    border: 0; 
+    border-top: 1px solid #999; 
+    border-bottom: 1px solid #333; 
+    height:0;
+}
+
+#name{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+i{
+    color: white;
+}
+
+#elnav{
+    color: white;
+}
+
+#redes{
+    text-align: left;
+}
+
+.section-background{
+    height: 400px;
+    width: 100%;
+    background-image: url(jpg/Homephoto.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.reproduccion{
+    float: left;
+    background-color: rgba(128, 128, 128, 0.718);
+    padding: 20px;
+    margin-top: 100px;
+    margin-left: 70%;
+    border-radius: 5px;
+}
+
+.reproduccion h2{
+    text-align: center;
+    color: white;
+}
+.reproduccion h3{
+    color: white;
+}
+
+.reproduccion a{
+    height: 50px;
+    margin: 10px;
+    background-color: rgba(245, 245, 220, 0.838);
+    border-radius: 2px;
+}
+
+#artmain{
+    text-align: center;
+    padding-top: 50px;
+    background-color: rgb(220, 170, 105);
+    height: 500px;
+}
+
+iframe{
+    text-align: center;
+}
+
+.about{
+    text-align: center;
+    padding-top: 25px;
+}
+
+.biografia{
+    background-color: rgba(128, 128, 128, 0.536);
+    padding: 20px;
+}
+
+.biotexto{
+    text-align: center;
+}
+
+
+.contenedorinfo{
+    text-align: left;
+    padding: 40px;
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+
+/**Pagina musica**/
+
+.musicbody{
+    background-color: burlywood;
+}
+
+#music{
+    text-align: center;
+    padding: 15px;
+}
+
+#imgcover{
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.contenedormusic{
+    padding-top: 200px;
+    text-align: center;
+}
+
+#epsubtitle{
+    padding-bottom: 20px;
+}
+
+#line{
+    border: solid 1px white;
+}
+
+#tfdos{
+    text-align: center;
+}
+
+#tfdossingle{
+    text-align: center;
+}
+
+.section1{
+    margin-left: 47%;
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
+
+.contenedorinfo{
+    background: white;
+}
+
+@media only screen and (max-width: 575px) {
+
+    #redes{
+        text-align: center;
+    }
+
+    .contenedor3{
+        text-align: center;
+    }
+
+    .reproduccion{
+        float: left;
+        background-color: rgba(128, 128, 128, 0.718);
+        padding: 20px;
+        margin-top: 200px;
+        margin-left: 1%;
+        border-radius: 5px;
+    }
+
+    #videoa{
+        padding-right: 20px;
+
+    }
+
+    #videob{
+        padding-right: 20px;
+
+    }
+
+    /**sigo pagina de musica**/
+
+    #name{
+        text-align: center;
+    }
+
+    #imgcover{
+        margin-left: 0%;
+        margin-top: 2%;
+    }
+
+    .contenedormusic{
+        padding-top: 50px;
+    }
+
+    #fototfdos{
+        margin-left: 0;
+    }
+
+    .section1{
+        margin-left: 35%;
+        padding-top: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (min-width: 575px) and (max-width: 720px) {
+
+    /**home**/
+
+    #redes{
+        text-align: center;
+    }
+
+    #elnav{
+        text-align: center;
+        text-decoration: none;
+    }
+    .reproduccion{
+        background-color: rgba(128, 128, 128, 0.718);
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    /**Musica**/
+
+    #imgcover{
+        margin-left: 22%;
+        margin-top: 2%;
+
+    }
+
+    .contenedormusic{
+        padding-top: 50px;
+    }
+
+
+
+
+}
+
+@media only screen and (min-width: 720px) and (max-width: 991px) {
+
+    #redes{
+        text-align: center;
+    }
+
+    #elnav{
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .reproduccion{
+        background-color: rgba(128, 128, 128, 0.718);
+        border-radius: 5px;
+        text-align: center;
+        margin-right: 20px;
+    }
+
+    #imgcover{
+        margin-left: 22%;
+        margin-top: 2%;
+
+    }
+
+    .contenedormusic{
+        padding-top: 50px;
+    }
+
+
+    #fototfdos{
+        margin-right: 50px;
+    }
+
+
+}

@@ -1,284 +1,265 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-header{
-    width: 100%;
-    background-color: black;
-    color: white;
-}
-hr{
-    border: 0; 
-    border-top: 1px solid #999; 
-    border-bottom: 1px solid #333; 
-    height:0;
+header {
+  width: 100%;
+  background-color: black;
+  color: white;
 }
 
-#name{
-    text-align: center;
-    color: white;
-    text-decoration: none;
+hr {
+  border: 0;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #333;
+  height: 0;
 }
 
-a{
-    text-decoration: none;
+#name {
+  text-align: center;
+  color: white;
+  text-decoration: none;
 }
 
-i{
-    color: white;
+a {
+  text-decoration: none;
 }
 
-#elnav{
-    color: white;
+i {
+  color: white;
 }
 
-#redes{
-    text-align: left;
+#elnav {
+  color: white;
 }
 
-.section-background{
-    height: 400px;
-    width: 100%;
-    background-image: url(jpg/Homephoto.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat
+#redes {
+  text-align: left;
 }
 
-.reproduccion{
-    float: left;
-    background-color: rgba(128, 128, 128, 0.718);
-    padding: 20px;
-    margin-top: 100px;
-    margin-left: 70%;
-    border-radius: 5px;
+.section-background {
+  height: 400px;
+  width: 100%;
+  background-image: url(jpg/Homephoto.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.reproduccion h2{
-    text-align: center;
-    color: white;
-}
-.reproduccion h3{
-    color: white;
-}
-
-.reproduccion a{
-    height: 50px;
-    margin: 10px;
-    background-color: rgba(245, 245, 220, 0.838);
-    border-radius: 2px;
+.reproduccion {
+  float: left;
+  background-color: rgba(128, 128, 128, 0.718);
+  padding: 20px;
+  margin-top: 100px;
+  margin-left: 70%;
+  border-radius: 5px;
 }
 
-#artmain{
-    text-align: center;
-    padding-top: 50px;
-    background-color: rgb(220, 170, 105);
-    height: 500px;
+.reproduccion h2 {
+  text-align: center;
+  color: white;
 }
 
-iframe{
-    text-align: center;
+.reproduccion h3 {
+  color: white;
 }
 
-.about{
-    text-align: center;
-    padding-top: 25px;
+.reproduccion a {
+  height: 50px;
+  margin: 10px;
+  background-color: rgba(245, 245, 220, 0.838);
+  border-radius: 2px;
 }
 
-.biografia{
-    background-color: rgba(128, 128, 128, 0.536);
-    padding: 20px;
+#artmain {
+  text-align: center;
+  padding-top: 50px;
+  background-color: rgb(220, 170, 105);
+  height: 500px;
 }
 
-.biotexto{
-    text-align: center;
+iframe {
+  text-align: center;
 }
 
-
-.contenedorinfo{
-    text-align: left;
-    padding: 40px;
+.about {
+  text-align: center;
+  padding-top: 25px;
 }
 
-footer{
-    width: 100%;
-    height: 60px;
-    text-align: center;
-    background-color: black;
-    color: white;
+.biografia {
+  background-color: rgba(128, 128, 128, 0.536);
+  padding: 20px;
 }
 
+.biotexto {
+  text-align: center;
+}
+
+.contenedorinfo {
+  text-align: left;
+  padding: 40px;
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
 
 /**Pagina musica**/
-
-.musicbody{
-    background-color: burlywood;
+.musicbody {
+  background-color: burlywood;
 }
 
-#music{
-    text-align: center;
-    padding: 15px;
+#music {
+  text-align: center;
+  padding: 15px;
 }
 
-#imgcover{
-    margin-left: 20%;
-    margin-top: 5%;
+#imgcover {
+  margin-left: 20%;
+  margin-top: 5%;
 }
 
-.contenedormusic{
-    padding-top: 200px;
-    text-align: center;
+.contenedormusic {
+  padding-top: 200px;
+  text-align: center;
 }
 
-#epsubtitle{
-    padding-bottom: 20px;
+#epsubtitle {
+  padding-bottom: 20px;
 }
 
-#line{
-    border: solid 1px white;
+#line {
+  border: solid 1px white;
 }
 
-#tfdos{
-    text-align: center;
+#tfdos {
+  text-align: center;
 }
 
-#tfdossingle{
-    text-align: center;
+#tfdossingle {
+  text-align: center;
 }
 
-.section1{
-    margin-left: 47%;
-    padding-top: 20px;
-    margin-bottom: 15px;
+.section1 {
+  margin-left: 47%;
+  padding-top: 20px;
+  margin-bottom: 15px;
 }
 
-.contenedorinfo{
-    background: white;
+.contenedorinfo {
+  background: white;
 }
 
 @media only screen and (max-width: 575px) {
+  #redes {
+    text-align: center;
+  }
 
-    #redes{
-        text-align: center;
-    }
+  .contenedor3 {
+    text-align: center;
+  }
 
-    .contenedor3{
-        text-align: center;
-    }
+  .reproduccion {
+    float: left;
+    background-color: rgba(128, 128, 128, 0.718);
+    padding: 20px;
+    margin-top: 200px;
+    margin-left: 1%;
+    border-radius: 5px;
+  }
 
-    .reproduccion{
-        float: left;
-        background-color: rgba(128, 128, 128, 0.718);
-        padding: 20px;
-        margin-top: 200px;
-        margin-left: 1%;
-        border-radius: 5px;
-    }
+  #videoa {
+    padding-right: 20px;
+  }
 
-    #videoa{
-        padding-right: 20px;
+  #videob {
+    padding-right: 20px;
+  }
 
-    }
+  /**sigo pagina de musica**/
+  #name {
+    text-align: center;
+  }
 
-    #videob{
-        padding-right: 20px;
+  #imgcover {
+    margin-left: 0%;
+    margin-top: 2%;
+  }
 
-    }
+  .contenedormusic {
+    padding-top: 50px;
+  }
 
-    /**sigo pagina de musica**/
+  #fototfdos {
+    margin-left: 0;
+  }
 
-    #name{
-        text-align: center;
-    }
-
-    #imgcover{
-        margin-left: 0%;
-        margin-top: 2%;
-    }
-
-    .contenedormusic{
-        padding-top: 50px;
-    }
-
-    #fototfdos{
-        margin-left: 0;
-    }
-
-    .section1{
-        margin-left: 35%;
-        padding-top: 20px;
-        margin-bottom: 15px;
-    }
+  .section1 {
+    margin-left: 35%;
+    padding-top: 20px;
+    margin-bottom: 15px;
+  }
 }
-
 @media only screen and (min-width: 575px) and (max-width: 720px) {
+  /**home**/
+  #redes {
+    text-align: center;
+  }
 
-    /**home**/
+  #elnav {
+    text-align: center;
+    text-decoration: none;
+  }
 
-    #redes{
-        text-align: center;
-    }
+  .reproduccion {
+    background-color: rgba(128, 128, 128, 0.718);
+    border-radius: 5px;
+    text-align: center;
+  }
 
-    #elnav{
-        text-align: center;
-        text-decoration: none;
-    }
-    .reproduccion{
-        background-color: rgba(128, 128, 128, 0.718);
-        border-radius: 5px;
-        text-align: center;
-    }
+  /**Musica**/
+  #imgcover {
+    margin-left: 22%;
+    margin-top: 2%;
+  }
 
-    /**Musica**/
-
-    #imgcover{
-        margin-left: 22%;
-        margin-top: 2%;
-
-    }
-
-    .contenedormusic{
-        padding-top: 50px;
-    }
-
-
-
-
+  .contenedormusic {
+    padding-top: 50px;
+  }
 }
-
 @media only screen and (min-width: 720px) and (max-width: 991px) {
+  #redes {
+    text-align: center;
+  }
 
-    #redes{
-        text-align: center;
-    }
+  #elnav {
+    text-align: center;
+    text-decoration: none;
+  }
 
-    #elnav{
-        text-align: center;
-        text-decoration: none;
-    }
+  .reproduccion {
+    background-color: rgba(128, 128, 128, 0.718);
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 20px;
+  }
 
-    .reproduccion{
-        background-color: rgba(128, 128, 128, 0.718);
-        border-radius: 5px;
-        text-align: center;
-        margin-right: 20px;
-    }
+  #imgcover {
+    margin-left: 22%;
+    margin-top: 2%;
+  }
 
-    #imgcover{
-        margin-left: 22%;
-        margin-top: 2%;
+  .contenedormusic {
+    padding-top: 50px;
+  }
 
-    }
-
-    .contenedormusic{
-        padding-top: 50px;
-    }
-
-
-    #fototfdos{
-        margin-right: 50px;
-    }
-
-
-}
+  #fototfdos {
+    margin-right: 50px;
+  }
+}/*# sourceMappingURL=stylesheet.css.map */
