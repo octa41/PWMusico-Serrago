@@ -2,99 +2,202 @@
     padding: 0;
     margin: 0;
 }
+/**Fuentes**/
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Gayathri:wght@100&display=swap');
+/**font-family: 'Gayathri', sans-serif;**/
+@import url('https://fonts.googleapis.com/css2?family=Angkor&display=swap');
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
+
+body{
+    font-family: 'Gayathri', sans-serif;
+    
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
 
 header{
     width: 100%;
     background-color: black;
-    color: white;
-}
-hr{
-    border: 0; 
-    border-top: 1px solid #999; 
-    border-bottom: 1px solid #333; 
-    height:0;
+
+    hr{
+        border: 0; 
+        border-top: 1px solid #999; 
+        border-bottom: 1px solid #333; 
+        height:0;
+    }
+
+    #name{
+        font-family: 'Angkor', cursive;
+        text-align: center;
+        text-decoration: none;
+    }
+
+        a:hover{
+            color: rgb(239, 239, 90);
+        }
+    
+    
+    
+    #redes{
+        text-align: left;
+    }
 }
 
-#name{
-    text-align: center;
-    color: white;
-    text-decoration: none;
-}
+main{
 
-a{
-    text-decoration: none;
-}
+    .section-background{
+        height: 400px;
+        width: 100%;
+        background-image: url(jpg/images.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
 
-i{
-    color: white;
-}
+        .reproduccion{
+            float: left;
+            background-color: rgba(128, 128, 128, 0.718);
+            padding: 20px;
+            margin-top: 100px;
+            margin-left: 70%;
+            border-radius: 5px;
+    
+            h2{
+                text-align: center;
+                color: white;
+            }
+    
+            h3{
+                color: white;
+            }
+    
+            a{
+                height: 50px;
+                margin: 10px;
+                background-color: rgba(245, 245, 220, 0.838);
+                border-radius: 2px;
+            }
+        }
+    }
 
-#elnav{
-    color: white;
-}
+    #artmain{
+        text-align: center;
+        padding-top: 50px;
+        background-color: rgb(220, 170, 105);
+        height: 500px;
 
-#redes{
-    text-align: left;
-}
+        iframe{
+            text-align: center;
+        }
+    }
 
-.section-background{
-    height: 400px;
-    width: 100%;
-    background-image: url(jpg/Homephoto.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat
-}
+    .biografia{
+        background-color: rgba(128, 128, 128, 0.536);
+        padding: 20px;
 
-.reproduccion{
-    float: left;
-    background-color: rgba(128, 128, 128, 0.718);
-    padding: 20px;
-    margin-top: 100px;
-    margin-left: 70%;
-    border-radius: 5px;
-}
+        .about{
+            text-align: center;
+            padding-top: 25px;
+        }
 
-.reproduccion h2{
-    text-align: center;
-    color: white;
-}
-.reproduccion h3{
-    color: white;
-}
-
-.reproduccion a{
-    height: 50px;
-    margin: 10px;
-    background-color: rgba(245, 245, 220, 0.838);
-    border-radius: 2px;
-}
-
-#artmain{
-    text-align: center;
-    padding-top: 50px;
-    background-color: rgb(220, 170, 105);
-    height: 500px;
-}
-
-iframe{
-    text-align: center;
-}
-
-.about{
-    text-align: center;
-    padding-top: 25px;
+        .biotexto{
+            text-align: center;
+        }
+        
+    }
 }
 
 .biografia{
-    background-color: rgba(128, 128, 128, 0.536);
-    padding: 20px;
-}
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 500px;
+    background: #141E30;
+    background: -webkit-linear-gradient(to top, #243B55, #141E30);
+    background: linear-gradient(to top, #243B55, #141E30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
 
-.biotexto{
-    text-align: center;
-}
+    .card {
+        
+        width: 100%;
+        height: 100%;
+        background: url(jpg/1605761666559.jpg);
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 5px 50px rgba(0, 0, 0, 0.85);
+        background-size: cover;
+      }
+      .card:before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-color: rgba(45, 42, 42, 0.586);
+        background-size: cover;
+        
+      }
+      .card .img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+      }
+      .card .img span {
+        width: 25%;
+        height: 100%;
+        background: url(jpg/1605761666559.jpg);
+        transition: 0.7s;
+      }
+      .card .img span:nth-child(1) {
+        background-position: 26%;
+        transition-delay: 0;
+      }
+      .card .img span:nth-child(2) {
+        background-position: 50%;
+        transition-delay: 0.1s;
+      }
+      .card .img span:nth-child(3) {
+        background-position: 73.8%;
+        transition-delay: 0.2s;
+      }
+      .card .img span:nth-child(4) {
+        background-position: 100%;
+        transition-delay: 0.3s;
+      }
+      
+      .card:hover .img > span {
+        transform: translateY(-100%);
+      }
+      .card:hover .content {
+        transform: translateY(0%);
+        transition: 1s;
+        transition-delay: 0.1s;
+      }
+      
+      .content {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        padding: 20px 20px;
+        width: 100%;
+        height: 100%;
+        transform: translateY(100%);
+      }
 
+
+}
 
 .contenedorinfo{
     text-align: left;
@@ -112,46 +215,7 @@ footer{
 
 /**Pagina musica**/
 
-.musicbody{
-    background-color: burlywood;
-}
 
-#music{
-    text-align: center;
-    padding: 15px;
-}
-
-#imgcover{
-    margin-left: 20%;
-    margin-top: 5%;
-}
-
-.contenedormusic{
-    padding-top: 200px;
-    text-align: center;
-}
-
-#epsubtitle{
-    padding-bottom: 20px;
-}
-
-#line{
-    border: solid 1px white;
-}
-
-#tfdos{
-    text-align: center;
-}
-
-#tfdossingle{
-    text-align: center;
-}
-
-.section1{
-    margin-left: 47%;
-    padding-top: 20px;
-    margin-bottom: 15px;
-}
 
 .contenedorinfo{
     background: white;
