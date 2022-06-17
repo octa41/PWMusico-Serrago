@@ -11,6 +11,7 @@
 /**font-family: 'Gayathri', sans-serif;**/
 body {
   font-family: "Gayathri", sans-serif;
+  background-color: black;
 }
 body a {
   color: white;
@@ -20,6 +21,10 @@ body a {
 header {
   width: 100%;
   background-color: black;
+}
+header .contenedor3:hover {
+  transform: scale(1.025);
+  transition: 0.5s;
 }
 header hr {
   border: 0;
@@ -33,23 +38,27 @@ header #name {
   text-decoration: none;
 }
 header a:hover {
-  color: rgb(239, 239, 90);
+  color: #5685d5;
 }
 header #redes {
   text-align: left;
+}
+header #redes :hover {
+  transform: scale(1.2);
+  transition: 0.5s;
 }
 
 main .section-background {
   height: 400px;
   width: 100%;
-  background-image: url(jpg/images.jpg);
+  background-image: url(jpg/Homephoto.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 main .section-background .reproduccion {
   float: left;
-  background-color: rgba(128, 128, 128, 0.718);
+  background-color: rgba(20, 30, 48, 0.737254902);
   padding: 20px;
   margin-top: 100px;
   margin-left: 70%;
@@ -67,29 +76,33 @@ main .section-background .reproduccion a {
   margin: 10px;
   background-color: rgba(245, 245, 220, 0.838);
   border-radius: 2px;
+  color: black;
+  margin-left: 125px;
+  padding-top: 4px;
+}
+main .section-background .reproduccion:hover {
+  transform: scale(1.2);
+  transition: 1s;
 }
 main #artmain {
   text-align: center;
   padding-top: 50px;
-  background-color: rgb(220, 170, 105);
+  background-color: #141E30;
   height: 500px;
 }
 main #artmain iframe {
   text-align: center;
 }
+main #artmain .thefirst {
+  color: white;
+}
+main #artmain .sask {
+  color: white;
+}
+main #artmain .colter {
+  color: white;
+}
 main .biografia {
-  background-color: rgba(128, 128, 128, 0.536);
-  padding: 20px;
-}
-main .biografia .about {
-  text-align: center;
-  padding-top: 25px;
-}
-main .biografia .biotexto {
-  text-align: center;
-}
-
-.biografia {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -102,7 +115,7 @@ main .biografia .biotexto {
   font-family: "Poppins", sans-serif;
   overflow: hidden;
 }
-.biografia .card {
+main .biografia .card {
   width: 100%;
   height: 100%;
   background: url(jpg/1605761666559.jpg);
@@ -111,16 +124,7 @@ main .biografia .biotexto {
   box-shadow: 0 5px 50px rgba(0, 0, 0, 0.85);
   background-size: cover;
 }
-.biografia .card:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  background-color: rgba(45, 42, 42, 0.586);
-  background-size: cover;
-}
-.biografia .card .img {
+main .biografia .card .img {
   position: absolute;
   top: 0;
   left: 0;
@@ -128,37 +132,45 @@ main .biografia .biotexto {
   height: 100%;
   display: flex;
 }
-.biografia .card .img span {
+main .biografia .card .img span {
   width: 25%;
   height: 100%;
   background: url(jpg/1605761666559.jpg);
   transition: 0.7s;
 }
-.biografia .card .img span:nth-child(1) {
-  background-position: 26%;
+main .biografia .card .img :nth-child(1) {
+  background-position: 26% 25%;
   transition-delay: 0;
 }
-.biografia .card .img span:nth-child(2) {
-  background-position: 50%;
+main .biografia .card .img :nth-child(2) {
+  background-position: 50% 25%;
   transition-delay: 0.1s;
 }
-.biografia .card .img span:nth-child(3) {
-  background-position: 73.8%;
+main .biografia .card .img :nth-child(3) {
+  background-position: 74.6% 25%;
   transition-delay: 0.2s;
 }
-.biografia .card .img span:nth-child(4) {
-  background-position: 100%;
+main .biografia .card .img :nth-child(4) {
+  background-position: 100% 25%;
   transition-delay: 0.3s;
 }
-.biografia .card:hover .img > span {
+main .biografia .card:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(45, 42, 42, 0.586);
+}
+main .biografia .card:hover .img > span {
   transform: translateY(-100%);
 }
-.biografia .card:hover .content {
+main .biografia .card:hover .content {
   transform: translateY(0%);
   transition: 1s;
   transition-delay: 0.1s;
 }
-.biografia .content {
+main .biografia .content {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -171,11 +183,6 @@ main .biografia .biotexto {
   transform: translateY(100%);
 }
 
-.contenedorinfo {
-  text-align: left;
-  padding: 40px;
-}
-
 footer {
   width: 100%;
   height: 60px;
@@ -185,8 +192,145 @@ footer {
 }
 
 /**Pagina musica**/
+.musicbody {
+  background-color: #141E30;
+}
+.musicbody .music {
+  padding-left: 35%;
+}
+.musicbody .music .icon-cards {
+  position: relative;
+  width: 60vw;
+  height: 40vw;
+  max-width: 380px;
+  max-height: 250px;
+  margin: 0;
+  color: white;
+  perspective: 1000px;
+  transform-origin: center;
+}
+.musicbody .music .icon-cards__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: translateZ(-30vw) rotateY(0);
+  -webkit-animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+          animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+.musicbody .music .icon-cards__content.step-animation {
+  -webkit-animation: carousel 8s infinite steps(1) forwards;
+          animation: carousel 8s infinite steps(1) forwards;
+}
+.musicbody .music .icon-cards__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 60vw;
+  height: 40vw;
+  max-width: 250px;
+  max-height: 246px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  transform-origin: center;
+}
+.musicbody .music .icon-cards__item:nth-child(1) {
+  background: black;
+  transform: rotateY(0) translateZ(35vw);
+}
+.musicbody .music .icon-cards__item:nth-child(2) {
+  background: black;
+  transform: rotateY(120deg) translateZ(35vw);
+}
+@-webkit-keyframes carousel {
+  0%, 17.5% {
+    transform: translateZ(-35vw) rotateY(0);
+  }
+  27.5%, 45% {
+    transform: translateZ(-35vw) rotateY(-120deg);
+  }
+  82.5%, 100% {
+    transform: translateZ(-35vw) rotateY(-360deg);
+  }
+}
+@keyframes carousel {
+  0%, 17.5% {
+    transform: translateZ(-35vw) rotateY(0);
+  }
+  27.5%, 45% {
+    transform: translateZ(-35vw) rotateY(-120deg);
+  }
+  82.5%, 100% {
+    transform: translateZ(-35vw) rotateY(-360deg);
+  }
+}
+.musicbody body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #110f15;
+}
+.musicbody .spanfoto1 {
+  height: 250px;
+  width: 250px;
+}
+.musicbody .spanfoto2 {
+  height: 250px;
+  width: 250px;
+}
+
+#elmainmusic .contenedor1demusica {
+  text-align: center;
+  color: white;
+  background-color: #000;
+  margin-top: 10px;
+}
+#elmainmusic .contenedor1demusica .thefirstday {
+  padding-top: 4px;
+}
+#elmainmusic .contenedor1demusica .ellisten1, #elmainmusic .contenedor1demusica .elbuy1 {
+  text-align: center;
+  background-color: grey;
+  margin: 3px;
+  border-radius: 2px;
+  border: solid black 1px;
+}
+#elmainmusic .contenedor2demusica {
+  text-align: center;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  margin-top: 10px;
+}
+#elmainmusic .contenedor2demusica .losted {
+  padding-top: 4px;
+}
+#elmainmusic .contenedor2demusica .ellisten2, #elmainmusic .contenedor2demusica .elbuy2 {
+  text-align: center;
+  background-color: grey;
+  margin: 3px;
+  border-radius: 2px;
+  border: solid black 1px;
+}
+.elfoter {
+  padding-top: 156px;
+}
+
 .contenedorinfo {
   background: white;
+}
+
+/**contact**/
+#elmaindelcontact {
+  background-color: #141E30;
+  color: white;
+}
+#elmaindelcontact .titulocontact {
+  margin-top: 20px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 @media only screen and (max-width: 575px) {
@@ -203,7 +347,7 @@ footer {
     background-color: rgba(128, 128, 128, 0.718);
     padding: 20px;
     margin-top: 200px;
-    margin-left: 1%;
+    margin-left: 0%;
     border-radius: 5px;
   }
 
@@ -220,23 +364,8 @@ footer {
     text-align: center;
   }
 
-  #imgcover {
-    margin-left: 0%;
-    margin-top: 2%;
-  }
-
   .contenedormusic {
     padding-top: 50px;
-  }
-
-  #fototfdos {
-    margin-left: 0;
-  }
-
-  .section1 {
-    margin-left: 35%;
-    padding-top: 20px;
-    margin-bottom: 15px;
   }
 }
 @media only screen and (min-width: 575px) and (max-width: 720px) {
@@ -253,17 +382,8 @@ footer {
   .reproduccion {
     background-color: rgba(128, 128, 128, 0.718);
     border-radius: 5px;
+    margin-left: 5%;
     text-align: center;
-  }
-
-  /**Musica**/
-  #imgcover {
-    margin-left: 22%;
-    margin-top: 2%;
-  }
-
-  .contenedormusic {
-    padding-top: 50px;
   }
 }
 @media only screen and (min-width: 720px) and (max-width: 991px) {
@@ -281,18 +401,5 @@ footer {
     border-radius: 5px;
     text-align: center;
     margin-right: 20px;
-  }
-
-  #imgcover {
-    margin-left: 22%;
-    margin-top: 2%;
-  }
-
-  .contenedormusic {
-    padding-top: 50px;
-  }
-
-  #fototfdos {
-    margin-right: 50px;
   }
 }/*# sourceMappingURL=stylesheet.css.map */
