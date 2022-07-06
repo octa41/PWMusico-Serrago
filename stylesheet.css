@@ -86,9 +86,12 @@ main .section-background .reproduccion:hover {
 }
 main #artmain {
   text-align: center;
-  padding-top: 50px;
-  background-color: #141E30;
-  height: 500px;
+  padding: 50px;
+  background: url(jpg/pexels-krivec-ales-552779.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 main #artmain iframe {
   text-align: center;
@@ -139,7 +142,7 @@ main .biografia .card .img span {
   transition: 0.7s;
 }
 main .biografia .card .img :nth-child(1) {
-  background-position: 26% 25%;
+  background-position: 25.4% 25%;
   transition-delay: 0;
 }
 main .biografia .card .img :nth-child(2) {
@@ -151,7 +154,7 @@ main .biografia .card .img :nth-child(3) {
   transition-delay: 0.2s;
 }
 main .biografia .card .img :nth-child(4) {
-  background-position: 100% 25%;
+  background-position: 99.1% 25%;
   transition-delay: 0.3s;
 }
 main .biografia .card:before {
@@ -183,6 +186,10 @@ main .biografia .content {
   transform: translateY(100%);
 }
 
+.contenedorinfo {
+  padding: 50px;
+}
+
 footer {
   width: 100%;
   height: 60px;
@@ -195,131 +202,93 @@ footer {
 .musicbody {
   background-color: #141E30;
 }
-.musicbody .music {
-  padding-left: 35%;
+.musicbody [type=radio] {
+  display: none;
 }
-.musicbody .music .icon-cards {
+.musicbody #slider {
+  height: 35vw;
   position: relative;
-  width: 60vw;
-  height: 40vw;
-  max-width: 380px;
-  max-height: 250px;
-  margin: 0;
-  color: white;
   perspective: 1000px;
-  transform-origin: center;
-}
-.musicbody .music .icon-cards__content {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform-origin: center;
   transform-style: preserve-3d;
-  transform: translateZ(-30vw) rotateY(0);
-  -webkit-animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
-          animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+  padding-top: 50px;
 }
-.musicbody .music .icon-cards__content.step-animation {
-  -webkit-animation: carousel 8s infinite steps(1) forwards;
-          animation: carousel 8s infinite steps(1) forwards;
-}
-.musicbody .music .icon-cards__item {
+.musicbody #slider label {
+  margin: auto;
+  width: 250px;
+  height: 60%;
+  border-radius: 4px;
   position: absolute;
-  top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  width: 60vw;
-  height: 40vw;
-  max-width: 250px;
-  max-height: 246px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 6px;
-  transform-origin: center;
+  cursor: pointer;
+  transition: transform 0.4s ease;
 }
-.musicbody .music .icon-cards__item:nth-child(1) {
-  background: black;
-  transform: rotateY(0) translateZ(35vw);
+.musicbody #slider #slide1 {
+  background-image: url(jpg/images.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-.musicbody .music .icon-cards__item:nth-child(2) {
-  background: black;
-  transform: rotateY(120deg) translateZ(35vw);
+.musicbody #slider #slide2 {
+  background-image: url(jpg/lost2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-@-webkit-keyframes carousel {
-  0%, 17.5% {
-    transform: translateZ(-35vw) rotateY(0);
-  }
-  27.5%, 45% {
-    transform: translateZ(-35vw) rotateY(-120deg);
-  }
-  82.5%, 100% {
-    transform: translateZ(-35vw) rotateY(-360deg);
-  }
+.musicbody #slider #slide3 {
+  background-image: url(jpg/images.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-@keyframes carousel {
-  0%, 17.5% {
-    transform: translateZ(-35vw) rotateY(0);
-  }
-  27.5%, 45% {
-    transform: translateZ(-35vw) rotateY(-120deg);
-  }
-  82.5%, 100% {
-    transform: translateZ(-35vw) rotateY(-360deg);
-  }
+.musicbody #s2:checked ~ #slide1, .musicbody #s1:checked ~ #slide3,
+.musicbody #s3:checked ~ #slide2 {
+  transform: translate3d(-40%, 0, -100px);
+  opacity: 0.6;
+  z-index: 0;
 }
-.musicbody body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background: #110f15;
+.musicbody #s3:checked ~ #slide1, .musicbody #s1:checked ~ #slide2,
+.musicbody #s2:checked ~ #slide3 {
+  transform: translate3d(40%, 0, -100px);
+  opacity: 0.6;
+  z-index: 0;
 }
-.musicbody .spanfoto1 {
-  height: 250px;
-  width: 250px;
+.musicbody #s1:checked ~ #slide1, .musicbody #s2:checked ~ #slide2,
+.musicbody #s3:checked ~ #slide3 {
+  transform: translate3d(0, 0, 0);
+  z-index: 1;
 }
-.musicbody .spanfoto2 {
-  height: 250px;
-  width: 250px;
-}
-
-#elmainmusic .contenedor1demusica {
+.musicbody #elmainmusic .contenedor1demusica {
   text-align: center;
   color: white;
   background-color: #000;
-  margin-top: 10px;
 }
-#elmainmusic .contenedor1demusica .thefirstday {
+.musicbody #elmainmusic .contenedor1demusica .thefirstday {
   padding-top: 4px;
 }
-#elmainmusic .contenedor1demusica .ellisten1, #elmainmusic .contenedor1demusica .elbuy1 {
+.musicbody #elmainmusic .contenedor1demusica .ellisten1, .musicbody #elmainmusic .contenedor1demusica .elbuy1 {
   text-align: center;
   background-color: grey;
   margin: 3px;
   border-radius: 2px;
   border: solid black 1px;
 }
-#elmainmusic .contenedor2demusica {
+.musicbody #elmainmusic .contenedor2demusica {
   text-align: center;
   color: white;
   background-color: rgb(0, 0, 0);
-  margin-top: 10px;
 }
-#elmainmusic .contenedor2demusica .losted {
+.musicbody #elmainmusic .contenedor2demusica .losted {
   padding-top: 4px;
 }
-#elmainmusic .contenedor2demusica .ellisten2, #elmainmusic .contenedor2demusica .elbuy2 {
+.musicbody #elmainmusic .contenedor2demusica .ellisten2, .musicbody #elmainmusic .contenedor2demusica .elbuy2 {
   text-align: center;
   background-color: grey;
   margin: 3px;
   border-radius: 2px;
   border: solid black 1px;
 }
-.elfoter {
+.musicbody .elfoter {
   padding-top: 156px;
 }
-
-.contenedorinfo {
+.musicbody .contenedorinfo {
   background: white;
 }
 
