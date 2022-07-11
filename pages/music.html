@@ -7,75 +7,159 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="../stylesheet.css">
-    <meta name="description" content="Octavio Serrago born in Argentina, is a country music singer, songwriter and guitarist. For bussines write an email..">
-    <meta name="keywords" content="octavio serrago, music, octavio, serrago, singer">
-    <title>OCTAVIO SERRAGO - MUSIC</title>
+    <title>MUSIC - OCTAVIO SERRAGO</title>
 </head>
 <body class="musicbody">
-    <header class="container-fluid">
-        <div class="row">
-            <a class ="col-lg-12" href="index.html">
-                <h1 id="name">OCTAVIO SERRAGO</h1>
-            </a>
-            <hr class="col-lg-12">
-            <article class="col-12 col-md-12 col-lg-3" id="redes">
-                <a class="col-lg-1" href="https://www.instagram.com/octavioserrago/" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-
-                <a class="col-lg-1" href="https://open.spotify.com/artist/1gya1oYPjYPTIjMPGWCRAS?si=y3-ihZA-TAC0Uaj7fgR_Sw" target="_blank">
-                    <i class="fa-brands fa-spotify"></i>
-                </a>
-
-                <a class="col-lg-1" href="https://www.youtube.com/channel/UCbc9tTuiaOoBfi9JEmZp0og" target="_blank">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-
-                <a class="col-lg-1" href="https://www.facebook.com/OctavioSerragoMusic/?show_switched_toast=1&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_transition=0&show_community_review_changes=0s" target="_blank">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-            </article>
-            <div class="contenedor3 col-12 col-sm-12 col-lg-2" id="elnav"><a href="../index.html">HOME</a></div>
-            <div class="contenedor3 col-12 col-sm-12 col-lg-2" id="elnav"><a href="music.html">MUSIC</a></div>
-            <div class="contenedor3 col-12 col-sm-12 col-lg-2" id="elnav"><a href="contact.html">CONTACT</a></div>
-            <div class="contenedor3 col-12 col-sm-12 col-lg-2" id="elnav"><a href="tourdates.html">TOUR DATES</a></div>
-        </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Octavio Serrago</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="music.html">Music</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="tourdates.html">Tour Dates</a>
+                    </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Social
+                    
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="https://www.instagram.com/octavioserrago/" target="_blank">Instagram</a>
+                    <a class="dropdown-item" href="https://open.spotify.com/artist/1gya1oYPjYPTIjMPGWCRAS?si=VHkaP02VQp-SXmlVcnyz9Q" target="_blank">Spotify</a>
+                    <a class="dropdown-item" href="https://www.facebook.com/OctavioSerragoMusic" target="_blank">Facebook</a>
+                    <a class="dropdown-item" href="https://www.twitter.com" target="_blank">Twitter</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
     </header>
-    <section id="slider">
-        <input type="radio" name="slider" id="s1">
-        <input type="radio" name="slider" id="s2">
-        <input type="radio" name="slider" id="s3" checked>
-        <label for="s1" id="slide1"></label>
-        <label for="s2" id="slide2"></label>
-        <label for="s3" id="slide3"></label>
-      </section>
+    <section class="musibody">
+        <div class="container">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <div class="cards">
+                <label class="card" for="item-1" id="song-1">
+                    <img src="../jpg/images.jpg" alt="song">
+                </label>
+                <label class="card" for="item-2" id="song-2">
+                    <img src="../jpg/lost2.jpg" alt="song">
+                </label>
+                <label class="card" for="item-3" id="song-3">
+                    <img src="../jpg/lost2.jpg" alt="song">
+                </label>
+            </div>
+            <div class="player">
+                <div class="upper-part">
+                    <div class="play-icon">
+                        <svg width="20" height="20" fill="#2992dc" stroke="#2992dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-play" viewBox="0 0 24 24">
+                        <defs/>
+                        <path d="M5 3l14 9-14 9V3z"/>
+                    </svg>
+                </div>
+                <div class="info-area" id="test">
+                    <label class="song-info" id="song-info-1">
+                        <div class="title">The First Day Of Spring</div>
+                        <div class="sub-line">
+                            <div class="subtitle">The First Day Of Spring</div>
+                            <div class="time">3:41</div>
+                        </div>
+                    </label>
+                    <label class="song-info" id="song-info-2">
+                        <div class="title">Lost</div>
+                        <div class="sub-line">
+                            <div class="subtitle">Black River</div>
+                            <div class="time">3:12</div>
+                        </div>
+                    </label>
+                    <label class="song-info" id="song-info-3">
+                        <div class="title">Lost</div>
+                        <div class="sub-line">
+                            <div class="subtitle">Lost</div>
+                            <div class="time">2:34</div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <article class="loslinkeados">
+        <ul>
+            <a href="https://www.amazon.com/-/es/dp/B09F8FTJB9" target="_blank"><li>AMAZON MUSIC</li></a>
+            <a href="https://open.spotify.com/artist/1gya1oYPjYPTIjMPGWCRAS?si=ZZwu4_rxSPq0OBeP5qbQ_g" target="_blank"><li>SPOTIFY</li></a>
+            <a href="https://music.apple.com/us/artist/octavio-serrago/1584058139" target="_blank"><li>APPLE MUSIC</li></a>
+        </ul>
+    </article>
+
 
     <main class="container-fluid" id="elmainmusic">
         <div class="row">
-            <div class="contenedor1demusica col-12 col-lg-6">
-                <h4 class="thefirstday">The First Day Of Spring</h4>
-                <p class="dos">(2021)</p>
-                <a href="https://open.spotify.com/track/0hSMaOw0REFg7TlFvWVvjD?si=b167fb31c4ff4819" class="ellisten1">LISTEN</a>
-                <a href="https://www.amazon.com/-/es/dp/B09F8FTJB9" class="elbuy1">BUY</a>
+
+            <div class="videos col-sm-12">
+                <div class="container-fluid">
+                    <div class="row">
+                        <h4 class="col-lg-12" id="yv">YOUTUBE VIDEOS</h4>
+                        <div class="becitr col-lg-6">
+                            <iframe width="350" height="315" src="https://www.youtube.com/embed/5kDs_0i_tks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="tfdos col-lg-6">
+                            <iframe width="350" height="315" src="https://www.youtube.com/embed/r81x1ZF6fZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="sask col-lg-6">
+                            <iframe width="350" height="315" src="https://www.youtube.com/embed/VvPOQmMPtfY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="rb col-lg-6">
+                            <iframe width="350" height="315" src="https://www.youtube.com/embed/IKaO-9I339U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            
-            <div class="contenedor2demusica col-12 col-lg-6">
-                <h4 class="losted">LOST</h4>
-                <p class="dosmil">(2022)</p>
-                <a href="https://open.spotify.com/album/5pVIFM9Rf8S59gKKjohan5?si=AU6dTTn9TBWYLqF4lpOHSw" class="ellisten2">LISTEN</a>
-                <a href="https://www.amazon.com/dp/B09VD2XZCM/ref=dm_rwp_pur_lnd_albm_unrg" class="elbuy2">BUY</a>
-            </div>
-        </div>
+
     </main>
     
     <div class="elfoter container-fluid">
         <div class="row">
             <footer class="col-12">
                 <h7 class="col-12">COPYRIGHTS OCTAVIO SERRAGO. ALL RIGHTS RESERVED</h7>
+                <article class="col-12 col-md-12 col-lg-3" id="redes">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <a class="col-3 col-sm-3 col-lg-1" href="https://www.instagram.com/octavioserrago/" target="_blank">
+                                <i class="fa-brands fa-instagram" id="instagram"></i>
+                            </a>
+    
+                            <a class="col-3 col-sm-3 col-lg-1" href="https://open.spotify.com/artist/1gya1oYPjYPTIjMPGWCRAS?si=y3-ihZA-TAC0Uaj7fgR_Sw" target="_blank">
+                                <i class="fa-brands fa-spotify" id="spotify"></i>
+                            </a>
+    
+                            <a class="col-3 col-sm-3 col-lg-1" href="https://www.youtube.com/channel/UCbc9tTuiaOoBfi9JEmZp0og" target="_blank">
+                                <i class="fa-brands fa-youtube" id="youtube"></i>
+                            </a>
+    
+                            <a class="col-3 col-sm-3 col-lg-1" href="https://www.facebook.com/OctavioSerragoMusic/?show_switched_toast=1&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_transition=0&show_community_review_changes=0s" target="_blank">
+                                <i class="fa-brands fa-facebook" id="facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
             </footer>
         </div>
     </div>
 
-   
+    <script src="/script.js"></script>
 </body>
 </html>
